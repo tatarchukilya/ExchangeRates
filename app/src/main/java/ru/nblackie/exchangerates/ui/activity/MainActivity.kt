@@ -1,4 +1,4 @@
-package ru.nblackie.exchangerates
+package ru.nblackie.exchangerates.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import ru.nblackie.exchangerates.R
 import ru.nblackie.exchangerates.repo.remote.cbr.CbrApi
 import ru.nblackie.exchangerates.repo.remote.cbr.CbrClient
 import ru.nblackie.exchangerates.repo.remote.cbr.response.DynamicValCurs

@@ -1,4 +1,4 @@
-package ru.nblackie.exchangerates.repo.remote.response
+package ru.nblackie.exchangerates.repo.remote.cbr.response
 
 import org.simpleframework.xml.Attribute
 import org.simpleframework.xml.Element

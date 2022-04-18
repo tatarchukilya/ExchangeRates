@@ -1,9 +1,8 @@
-package ru.nblackie.exchangerates.repo.remote.response
+package ru.nblackie.exchangerates.repo.remote.cbr.response
 
 import org.simpleframework.xml.Attribute
 import org.simpleframework.xml.ElementList
 import org.simpleframework.xml.Root
-import ru.nblackie.exchangerates.repo.remote.response.Record
 
 @Root(name = "ValCurs", strict = false)
 data class DynamicValCurs(
