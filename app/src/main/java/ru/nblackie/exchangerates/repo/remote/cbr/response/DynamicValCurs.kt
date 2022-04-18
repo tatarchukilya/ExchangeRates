@@ -1,0 +1,25 @@
+package ru.nblackie.exchangerates.repo.remote.response
+
+import org.simpleframework.xml.Attribute
+import org.simpleframework.xml.ElementList
+import org.simpleframework.xml.Root
+import ru.nblackie.exchangerates.repo.remote.response.Record
+
+@Root(name = "ValCurs", strict = false)
+data class DynamicValCurs(
+
+    @field:Attribute(name = "ID")
+    var id: String = "",
+
+    @field:Attribute(name = "DateRange1")
+    var dateFrom: String = "",
+
+    @field:Attribute(name = "DateRange2")
+    var dateTo: String = "",
+
+    @field:Attribute(name = "name")
+    var name: String? = null,
+
+    @field:ElementList(name = "Record", inline = true)
+    var records: List<Record> = mutableListOf()
+)
