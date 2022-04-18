@@ -1,8 +1,8 @@
-package ru.tatarchuk.rest.client
+package ru.nblackie.exchangerates.repo.remote.cbr
 
-import ru.nblackie.exchangerates.repo.remote.client.RestClient
+import ru.nblackie.exchangerates.repo.remote.RestClient
 
-class CentralBankClient : RestClient() {
+class CbrClient : RestClient() {
 
-    override fun baseUrl() = "http://www.cbr.ru/scripts/"
+    override fun baseUrl() = "https://www.cbr.ru/scripts/"
 }

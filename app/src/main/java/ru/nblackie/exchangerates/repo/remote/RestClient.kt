@@ -1,4 +1,4 @@
-package ru.nblackie.exchangerates.repo.remote.client
+package ru.nblackie.exchangerates.repo.remote
 
 import android.util.Log
 import okhttp3.OkHttpClient
